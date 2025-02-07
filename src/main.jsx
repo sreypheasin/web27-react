@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Product from "./pages/products/Products.jsx";
 import Cart from "./pages/cart/Cart.jsx";
 import RootLayout from "./components/layouts/root-layout.jsx";
+import Login from "./pages/login/login.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -16,8 +17,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="/products" element={<Product />} />
           <Route path="/carts" element={<Cart />} />
         </Route>
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
 );
-
